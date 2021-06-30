@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #e8e8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+.quiz-card {
+  background: white;
+  width: 50%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-card h2 {
+  padding: 1em 1em .5em 1em;
+}
+
+.choice-list {
+  list-style-type: none;
+  padding: 0 5em;
+  margin-bottom: 2em;
+}
+
+.choice-list-item {
+  margin: 1em;
+}
+
+#btn {
+  width: 100%;
+  background: #4275f5;
+  color: white;
+  border: none;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .quiz-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 470px) {
+  .quiz-card {
+    width: 90%;
+  }
+  .choice-list {
+    padding: 0 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
